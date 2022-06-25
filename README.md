@@ -1,2 +1,8 @@
 # TripAdvisor-Reviews-Analysis-AZURE
-Trip Advisor Reviews Sentiment Analysis Project using Azure synapse analytics, Data Lake, Data Warehouse, Power BI and Azure ML
+Trip Advisor Reviews Sentiment Analysis Project using:
+  - Azure synapse analytics
+  - Self Hosted IR
+  - Data Lake
+  - Data Warehouse
+  - Power BI
+  - Azure ML
