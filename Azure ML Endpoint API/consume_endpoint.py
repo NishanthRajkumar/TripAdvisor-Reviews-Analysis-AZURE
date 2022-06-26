@@ -3,6 +3,9 @@ import json
 import os
 import ssl
 
+url = os.environ.get('ENDPOINT_URL')
+api_key = os.environ.get('ENDPOINT_KEY') # Replace this with the API key for the web service
+
 def allowSelfSignedHttps(allowed):
     # bypass the server certificate verification on client side
     if allowed and not os.environ.get('PYTHONHTTPSVERIFY', '') and getattr(ssl, '_create_unverified_context', None):
@@ -24,9 +27,6 @@ def get_review_sentiment(review: str) -> str:
     }
 
     body = str.encode(json.dumps(data))
-
-    url = os.environ.get('HASHINGONLY_URL')
-    api_key = os.environ.get('HASHINGONLY_KEY') # Replace this with the API key for the web service
 
     # The azureml-model-deployment header will force the request to go to a specific deployment.
     # Remove this header to have the request observe the endpoint traffic rules

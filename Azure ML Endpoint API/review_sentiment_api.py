@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
-from consume_hashingonly import get_review_sentiment
+from consume_endpoint import get_review_sentiment
 
 app = FastAPI()
 
