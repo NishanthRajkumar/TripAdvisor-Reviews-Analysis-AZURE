@@ -1,5 +1,6 @@
 # TripAdvisor-Reviews-Analysis-AZURE
 Trip Advisor Reviews Sentiment Analysis Project
+
 Tools/Tech used:
   - Azure synapse analytics
   - Self Hosted IR
